@@ -301,3 +301,9 @@ h4 {
   color: rgb(49, 33, 43);
   text-shadow: 3px 3px #ffe7f7;
 }
+
+.btn{
+  text-align: center;
+  width: 46%;
+  display: inline block;
+}
