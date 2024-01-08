@@ -9,6 +9,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div class="popup">
+        <div class="popup-content">
+            <h1> <i class="fa fa-close"></i></h1>
+            <!-- <h2>Subscribe...</h2> -->
+            <img id="adimg" src="home/webjpeg/homeD.jpg" alt="! Advertisement !">
+          </div>
+    </div>
   <nav class="navbar">
     <div class="navbar-container container">
         <input type="checkbox" name="" id="">
@@ -176,5 +183,18 @@
       <img id="whatsapp" src="home/webjpeg/whatsapp.gif" alt="">
     </a>
   </div>
+  <script>
+    const popup = document.querySelector('.popup');
+    const x = document.querySelector('.popup-content h1')
+
+    window.addEventListener('load', () => {
+        popup.classList.add('showPopup');
+        popup.childNodes[1].classList.add('showPopup');
+    })
+    x.addEventListener('click', () => {
+        popup.classList.remove('showPopup');
+        popup.childNodes[1].classList.remove('showPopup');
+    })
+</script>
 </body>
 </html>
