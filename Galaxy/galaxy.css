@@ -161,7 +161,7 @@
         right: 15px;
         padding: 2%;
         font-size: 210%;
-    }
+    }}
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
         transform: translateX(0);
