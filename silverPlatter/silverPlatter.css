@@ -163,6 +163,7 @@
         padding: 2%;
         font-size: 3vh;
     }
+    
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
