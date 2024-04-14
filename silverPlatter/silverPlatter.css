@@ -366,6 +366,22 @@ ok .page:before {
   background-size: contain;
 }
 #page12{
+  background: url(webjpeg/pg11.jpg);
+  background-size: contain;
+}
+#page13{
+  background: url(webjpeg/pg12.jpg);
+  background-size: contain;
+}
+#page14{
+  background: url(webjpeg/pg13.jpg);
+  background-size: contain;
+}
+#page15{
+  background: url(webjpeg/pg14.jpg);
+  background-size: contain;
+}
+#page16{
   background: url(webjpeg/back.jpg);
   background-size: contain;
 }
