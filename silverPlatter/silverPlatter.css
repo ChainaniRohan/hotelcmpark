@@ -322,7 +322,7 @@ ok .page:before {
 }
 
 #page1{
-  background: url(webjpeg/front.jpg);
+  background: url(webjpeg/front.webp);
   background-size: contain;
 }
 #page2{
@@ -382,7 +382,7 @@ ok .page:before {
   background-size: contain;
 }
 #page16{
-  background: url(webjpeg/back.jpg);
+  background: url(webjpeg/back.webp);
   background-size: contain;
 }
 
