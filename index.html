@@ -12,8 +12,7 @@
   <div id="popup-parent">
   <div class="popup">
         <div class="popup-content">
-            <h1> <i class="fa fa-close" alt="close x"></i></h1>
-            <!-- <h2>Subscribe...</h2> -->
+          <h1 id="closePopup"><i class="fa fa-close"></i></h1>
             <img id="adimg" src="home/webjpeg/homeD.png" alt="! Advertisement !">
           </div>
     </div>
@@ -187,17 +186,48 @@
     </a>
   </div>
   <script>
-    const popup = document.querySelector('.popup');
-    const x = document.querySelector('.popup-content h1')
+window.addEventListener('DOMContentLoaded', () => {
 
-    window.addEventListener('load', () => {
-        popup.classList.add('showPopup');
-        popup.childNodes[1].classList.add('showPopup');
-    })
-    x.addEventListener('click', () => {
+    const popup = document.querySelector('.popup');
+    const popupContent = document.querySelector('.popup-content');
+    const closeBtn = document.getElementById('closePopup');
+    const adImage = document.getElementById('adimg');
+
+    // CHECK IF ELEMENT EXISTS
+    if (!closeBtn) {
+        console.error("closePopup element not found");
+        return;
+    }
+
+    // IMAGE LIST
+    const popupImages = [
+      "home/webjpeg/Ad/paneer-kashmiri-deligt-combo.png",
+      "home/webjpeg/Ad/paneer-khurchan.png",
+      "home/webjpeg/Ad/veg-burger.png",
+      "home/webjpeg/Ad/veg-kofta-with-kulcha.png",
+      "home/webjpeg/Ad/homeD.png"
+    ];
+
+    // RANDOM IMAGE
+    function setRandomPopupImage() {
+        const randomIndex = Math.floor(Math.random() * popupImages.length);
+        adImage.src = popupImages[randomIndex];
+    }
+
+    // SHOW POPUP
+    setRandomPopupImage();
+
+    popup.classList.add('showPopup');
+    popupContent.classList.add('showPopup');
+
+    // CLOSE BUTTON
+    closeBtn.addEventListener('click', () => {
         popup.classList.remove('showPopup');
-        popup.childNodes[1].classList.remove('showPopup');
-    })
+        popupContent.classList.remove('showPopup');
+    });
+
+});
 </script>
+  
 </body>
 </html>
