@@ -554,3 +554,7 @@ h4 {
   z-index: 999999;
   font-size: 20px;
 }
+
+img{
+  content-visibility: auto;
+}

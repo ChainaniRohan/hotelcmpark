@@ -415,3 +415,7 @@ h4 {
   display: block;
   border-radius: 12px;
 }
+
+img{
+  content-visibility: auto;
+}
