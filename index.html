@@ -232,6 +232,19 @@ window.addEventListener('DOMContentLoaded', () => {
         popupContent.classList.remove('showPopup');
     });
 
+        // CLICK OUTSIDE IMAGE TO CLOSE
+    popup.addEventListener('click', function(e){
+
+    // if clicked outside popup-content
+    if(!popupContent.contains(e.target)){
+
+      popup.classList.remove('showPopup');
+      popupContent.classList.remove('showPopup');
+
+    }
+
+});
+
 });
 </script>
   

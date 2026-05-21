@@ -137,6 +137,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // CLICK OUTSIDE IMAGE TO CLOSE
+  popup.addEventListener('click', function(e){
+
+  // if clicked outside popup-content
+  if(!popupContent.contains(e.target)){
+
+      closePopup();
+
+  }
+
+});
 
   // CLOSE FUNCTION
   function closePopup() {
